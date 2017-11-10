@@ -4,6 +4,205 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.deepanshu.patient.PatientDetailActivity">
+
+    <TextView
+        android:id="@+id/patient_detail_patientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/patient_detail_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Id: "
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_patientName"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/patient_detail_patientId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toRightOf="@id/patient_detail_Id"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_patientName"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/patient_detail_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Gender: "
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_patientId"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/patient_detail_patientGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toRightOf="@id/patient_detail_gender"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_patientId"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/patient_detail_pulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Pulse Rate: "
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_patientGender"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/patient_detail_patientPulseRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toRightOf="@id/patient_detail_pulse"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_gender"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/patient_detail_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Body Temprature: "
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_pulse"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/patient_detail_patientTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toRightOf="@id/patient_detail_temp"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_pulse"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/patient_detail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Status: "
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_temp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/patient_detail_patientStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toRightOf="@id/patient_detail_status"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_temp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/patient_detail_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Location: "
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_status"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/patient_detail_patientLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toRightOf="@id/patient_detail_location"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_status"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/patient_detail_roomtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Room Temprature: "
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_location"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/patient_detail_patientRoomtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toRightOf="@id/patient_detail_roomtemp"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_location"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/patient_detail_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Phone No.: "
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_roomtemp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/patient_detail_patientPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toRightOf="@id/patient_detail_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/patient_detail_roomtemp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
 
 </android.support.constraint.ConstraintLayout>
